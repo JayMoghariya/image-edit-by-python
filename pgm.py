@@ -229,8 +229,9 @@ z=edgedetection(x)
 writepgm(z,'edge.pgm')
 writepgm(avarageimage(readpgm('flower_gray.pgm')),'outavg.pgm')
 writepgm(edgedetection(readpgm('flower_gray.pgm')),'outedg.pgm')
+writepgm(edgedetection(readpgm('mona_lisa.ascii.pgm')),'monaedge.pgm')
 '''writepgm(avarageimage(readpgm('photo.pgm')),'extraavg.pgm')
-writepgm(edgedetection(readpgm('photo.pgm')),'etraedg.pgm')'''
+writepgm(edgedetection(readpgm('photo.pgm')),'etraedg.pgm')
 writepgm(Minenergy(z,x),'minenergy1.pgm')
-writepgm(Minenergy(edgedetection(readpgm('flower_gray.pgm')),readpgm('flower_gray.pgm')),'minenergy2.pgm')
+writepgm(Minenergy(edgedetection(readpgm('flower_gray.pgm')),readpgm('flower_gray.pgm')),'minenergy2.pgm')'''
 ###################################
